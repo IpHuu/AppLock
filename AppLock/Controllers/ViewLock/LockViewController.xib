@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LockViewController" customModule="AppLock" customModuleProvider="target">
+            <connections>
+                <outlet property="lbMessage" destination="3NW-Cd-Rst" id="5eX-Xh-wzT"/>
+                <outlet property="lbTitle" destination="fjC-d0-PYJ" id="vs6-uh-dhd"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outletCollection property="roundView" destination="t54-63-Uxd" collectionClass="NSMutableArray" id="5re-Pm-KoD"/>
+                <outletCollection property="roundView" destination="VFF-b2-Ma7" collectionClass="NSMutableArray" id="gLr-UD-AqO"/>
+                <outletCollection property="roundView" destination="YeR-5L-K4j" collectionClass="NSMutableArray" id="gx1-cJ-4t7"/>
+                <outletCollection property="roundView" destination="sfE-yJ-KDf" collectionClass="NSMutableArray" id="GMY-SQ-XgK"/>
+                <outletCollection property="roundView" destination="L48-r9-ELL" collectionClass="NSMutableArray" id="l0J-C7-0EH"/>
+                <outletCollection property="roundView" destination="bO7-zq-qmt" collectionClass="NSMutableArray" id="96T-OC-xJb"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter passcode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fjC-d0-PYJ">
+                    <rect key="frame" x="137.33333333333334" y="159" width="118.33333333333334" height="20.333333333333343"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="bEt-z7-fDj">
+                    <rect key="frame" x="86.666666666666686" y="195.33333333333334" width="220" height="20"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t54-63-Uxd" customClass="RoundView" customModule="AppLock" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="t54-63-Uxd" secondAttribute="height" id="d2U-LX-Lqt"/>
+                                <constraint firstAttribute="height" constant="20" id="s5G-wj-FRX"/>
+                            </constraints>
+                        </view>
+                        <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VFF-b2-Ma7" customClass="RoundView" customModule="AppLock" customModuleProvider="target">
+                            <rect key="frame" x="40" y="0.0" width="20" height="20"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="VFF-b2-Ma7" secondAttribute="height" id="bQP-y6-lAl"/>
+                                <constraint firstAttribute="height" constant="20" id="gqt-Bk-PC6"/>
+                            </constraints>
+                        </view>
+                        <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YeR-5L-K4j" customClass="RoundView" customModule="AppLock" customModuleProvider="target">
+                            <rect key="frame" x="79.999999999999986" y="0.0" width="20" height="20"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="CTk-3V-fn9"/>
+                                <constraint firstAttribute="width" secondItem="YeR-5L-K4j" secondAttribute="height" id="IGW-oR-7Wk"/>
+                            </constraints>
+                        </view>
+                        <view tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sfE-yJ-KDf" customClass="RoundView" customModule="AppLock" customModuleProvider="target">
+                            <rect key="frame" x="120" y="0.0" width="20" height="20"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="lWc-Ln-3L7"/>
+                                <constraint firstAttribute="width" secondItem="sfE-yJ-KDf" secondAttribute="height" id="n7e-ed-N5F"/>
+                            </constraints>
+                        </view>
+                        <view tag="4" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L48-r9-ELL" customClass="RoundView" customModule="AppLock" customModuleProvider="target">
+                            <rect key="frame" x="160" y="0.0" width="20" height="20"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="8xG-JK-Ieu"/>
+                                <constraint firstAttribute="width" secondItem="L48-r9-ELL" secondAttribute="height" id="xUY-OJ-dJz"/>
+                            </constraints>
+                        </view>
+                        <view tag="5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bO7-zq-qmt" customClass="RoundView" customModule="AppLock" customModuleProvider="target">
+                            <rect key="frame" x="200" y="0.0" width="20" height="20"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="bO7-zq-qmt" secondAttribute="height" id="VGe-mQ-RVb"/>
+                                <constraint firstAttribute="height" constant="20" id="mqo-9a-nkQ"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="YeR-5L-K4j" firstAttribute="width" secondItem="YeR-5L-K4j" secondAttribute="height" id="Or7-ZQ-FP6"/>
+                        <constraint firstItem="L48-r9-ELL" firstAttribute="width" secondItem="L48-r9-ELL" secondAttribute="height" id="VXL-Me-PQ3"/>
+                        <constraint firstItem="VFF-b2-Ma7" firstAttribute="width" secondItem="VFF-b2-Ma7" secondAttribute="height" id="cHP-qR-hYe"/>
+                        <constraint firstItem="bO7-zq-qmt" firstAttribute="width" secondItem="bO7-zq-qmt" secondAttribute="height" id="hcJ-5z-ZjE"/>
+                        <constraint firstItem="sfE-yJ-KDf" firstAttribute="width" secondItem="sfE-yJ-KDf" secondAttribute="height" id="shP-kX-r0P"/>
+                    </constraints>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="fMD-f0-BEO">
+                    <rect key="frame" x="156.66666666666666" y="315.33333333333331" width="80" height="349.99999999999994"/>
+                    <subviews>
+                        <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bNd-1h-e9g" customClass="RoundViewButton" customModule="AppLock" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="80" id="kIZ-jc-nbQ"/>
+                            </constraints>
+                            <color key="tintColor" systemColor="labelColor"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain">
+                                <attributedString key="attributedTitle">
+                                    <fragment content="2">
+                                        <attributes>
+                                            <font key="NSFont" size="36" name="Helvetica"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                            </buttonConfiguration>
+                            <connections>
+                                <action selector="tappedToButtonNumber:" destination="-1" eventType="touchUpInside" id="5ll-kk-ePo"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="taZ-76-HFC" customClass="RoundViewButton" customModule="AppLock" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="90" width="80" height="80"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="80" id="58C-wr-go5"/>
+                            </constraints>
+                            <color key="tintColor" systemColor="labelColor"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain">
+                                <attributedString key="attributedTitle">
+                                    <fragment content="5">
+                                        <attributes>
+                                            <font key="NSFont" size="36" name="Helvetica"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                            </buttonConfiguration>
+                            <connections>
+                                <action selector="tappedToButtonNumber:" destination="-1" eventType="touchUpInside" id="HvG-OE-qH1"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wXC-3X-veg" customClass="RoundViewButton" customModule="AppLock" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="180" width="80" height="80"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="80" id="umM-YF-S37"/>
+                            </constraints>
+                            <color key="tintColor" systemColor="labelColor"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain">
+                                <attributedString key="attributedTitle">
+                                    <fragment content="8">
+                                        <attributes>
+                                            <font key="NSFont" size="36" name="Helvetica"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                            </buttonConfiguration>
+                            <connections>
+                                <action selector="tappedToButtonNumber:" destination="-1" eventType="touchUpInside" id="q0V-ru-uGT"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jfd-S8-avn" customClass="RoundViewButton" customModule="AppLock" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="270.00000000000006" width="80" height="80"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="80" id="ULw-9d-s4c"/>
+                            </constraints>
+                            <color key="tintColor" systemColor="labelColor"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain">
+                                <attributedString key="attributedTitle">
+                                    <fragment content="0">
+                                        <attributes>
+                                            <font key="NSFont" size="36" name="Helvetica"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                            </buttonConfiguration>
+                            <connections>
+                                <action selector="tappedToButtonNumber:" destination="-1" eventType="touchUpInside" id="JEB-33-x1J"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="T4h-3F-yol"/>
+                        <constraint firstAttribute="height" constant="350" id="Ty4-ST-Z9s"/>
+                    </constraints>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="vLm-NV-O6e">
+                    <rect key="frame" x="56.666666666666657" y="315.33333333333331" width="80" height="259.99999999999994"/>
+                    <subviews>
+                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g1v-OA-bpM" customClass="RoundViewButton" customModule="AppLock" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="80" id="lgG-HK-dmJ"/>
+                            </constraints>
+                            <color key="tintColor" systemColor="labelColor"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain">
+                                <attributedString key="attributedTitle">
+                                    <fragment content="1">
+                                        <attributes>
+                                            <font key="NSFont" size="36" name="Helvetica"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                            </buttonConfiguration>
+                            <connections>
+                                <action selector="tappedToButtonNumber:" destination="-1" eventType="touchUpInside" id="afe-Yb-DeL"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qr5-u4-edZ" customClass="RoundViewButton" customModule="AppLock" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="90" width="80" height="80"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="80" id="cPx-CO-tvA"/>
+                            </constraints>
+                            <color key="tintColor" systemColor="labelColor"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain">
+                                <attributedString key="attributedTitle">
+                                    <fragment content="4">
+                                        <attributes>
+                                            <font key="NSFont" size="36" name="Helvetica"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                            </buttonConfiguration>
+                            <connections>
+                                <action selector="tappedToButtonNumber:" destination="-1" eventType="touchUpInside" id="F53-lY-ukM"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GQK-S5-oye" customClass="RoundViewButton" customModule="AppLock" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="180" width="80" height="80"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="80" id="ixp-Pw-Uwf"/>
+                            </constraints>
+                            <color key="tintColor" systemColor="labelColor"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain">
+                                <attributedString key="attributedTitle">
+                                    <fragment content="7">
+                                        <attributes>
+                                            <font key="NSFont" size="36" name="Helvetica"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                            </buttonConfiguration>
+                            <connections>
+                                <action selector="tappedToButtonNumber:" destination="-1" eventType="touchUpInside" id="3k2-2c-Ay4"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="ZCZ-6V-nff"/>
+                    </constraints>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="OU1-Ag-ClR">
+                    <rect key="frame" x="256.66666666666669" y="315.33333333333331" width="80" height="349.99999999999994"/>
+                    <subviews>
+                        <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SbS-4l-M4j" customClass="RoundViewButton" customModule="AppLock" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="80" id="PCb-8C-UTb"/>
+                            </constraints>
+                            <color key="tintColor" systemColor="labelColor"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain">
+                                <attributedString key="attributedTitle">
+                                    <fragment content="3">
+                                        <attributes>
+                                            <font key="NSFont" size="36" name="Helvetica"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                            </buttonConfiguration>
+                            <connections>
+                                <action selector="tappedToButtonNumber:" destination="-1" eventType="touchUpInside" id="35J-2A-jeu"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="isg-td-5WY" customClass="RoundViewButton" customModule="AppLock" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="90" width="80" height="80"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="80" id="ywc-zn-p5N"/>
+                            </constraints>
+                            <color key="tintColor" systemColor="labelColor"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain">
+                                <attributedString key="attributedTitle">
+                                    <fragment content="6">
+                                        <attributes>
+                                            <font key="NSFont" size="36" name="Helvetica"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                            </buttonConfiguration>
+                            <connections>
+                                <action selector="tappedToButtonNumber:" destination="-1" eventType="touchUpInside" id="mYU-1M-WoF"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Foe-Gt-aAD" customClass="RoundViewButton" customModule="AppLock" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="180" width="80" height="80"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="80" id="mdx-oO-fI3"/>
+                            </constraints>
+                            <color key="tintColor" systemColor="labelColor"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain">
+                                <attributedString key="attributedTitle">
+                                    <fragment content="9">
+                                        <attributes>
+                                            <font key="NSFont" size="36" name="Helvetica"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                            </buttonConfiguration>
+                            <connections>
+                                <action selector="tappedToButtonNumber:" destination="-1" eventType="touchUpInside" id="ds2-mJ-YUY"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zeb-LK-iJe" customClass="RoundViewButton" customModule="AppLock" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="270.00000000000006" width="80" height="80"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="80" id="7LG-I5-YdN"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                            <color key="tintColor" systemColor="labelColor"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal">
+                                <imageReference key="image" image="delete.backward" catalog="system" symbolScale="large"/>
+                            </state>
+                            <connections>
+                                <action selector="tappedToDelete:" destination="-1" eventType="touchUpInside" id="uie-aG-j49"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="XLq-CO-Sa3"/>
+                    </constraints>
+                </stackView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sai mật khẩu" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3NW-Cd-Rst">
+                    <rect key="frame" x="16" y="235.33333333333334" width="361" height="20.333333333333343"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="Cab-SL-GwO"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" systemColor="systemRedColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fjC-d0-PYJ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="100" id="1b8-wk-5N7"/>
+                <constraint firstItem="fMD-f0-BEO" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="31B-8E-NyA"/>
+                <constraint firstItem="3NW-Cd-Rst" firstAttribute="top" secondItem="bEt-z7-fDj" secondAttribute="bottom" constant="20" id="DMO-QH-0sF"/>
+                <constraint firstItem="fMD-f0-BEO" firstAttribute="leading" secondItem="vLm-NV-O6e" secondAttribute="trailing" constant="20" id="EAV-AG-EZ5"/>
+                <constraint firstItem="bEt-z7-fDj" firstAttribute="top" secondItem="fjC-d0-PYJ" secondAttribute="bottom" constant="16" id="G4N-qq-hje"/>
+                <constraint firstItem="vLm-NV-O6e" firstAttribute="top" secondItem="fMD-f0-BEO" secondAttribute="top" id="ISj-Nt-MEk"/>
+                <constraint firstItem="fMD-f0-BEO" firstAttribute="top" secondItem="bEt-z7-fDj" secondAttribute="bottom" constant="100" id="JMM-Y8-mUG"/>
+                <constraint firstItem="OU1-Ag-ClR" firstAttribute="top" secondItem="vLm-NV-O6e" secondAttribute="top" id="KMF-aK-JVR"/>
+                <constraint firstItem="OU1-Ag-ClR" firstAttribute="leading" secondItem="fMD-f0-BEO" secondAttribute="trailing" constant="20" id="MpR-36-Hhe"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="3NW-Cd-Rst" secondAttribute="trailing" constant="16" id="T4Y-xv-mqM"/>
+                <constraint firstItem="bEt-z7-fDj" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="bPO-PS-0eJ"/>
+                <constraint firstItem="3NW-Cd-Rst" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="emo-Gg-ecP"/>
+                <constraint firstItem="3NW-Cd-Rst" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="i5B-6h-0gm"/>
+                <constraint firstItem="fjC-d0-PYJ" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="sJj-GK-OP1"/>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="fMD-f0-BEO"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="fMD-f0-BEO"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="64.885496183206101" y="-12.67605633802817"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="delete.backward" catalog="system" width="128" height="102"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

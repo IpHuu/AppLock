@@ -1,0 +1,30 @@
+/* 
+  Localizable.strings
+  AppLock
+
+  Created by Ipman on 23/05/2024.
+  
+*/
+"home" = "Home";
+"chooseLanguage" = "Choose Language";
+"en" = "English";
+"vi" = "Tiếng Việt";
+"cn" = "简体中文";
+"cancel" = "Cancel";
+
+"setting" = "Setting";
+"language" = "Language";
+"config_password" = "Config password";
+"change_password" = "Change Password";
+"lock_with_password" = "Lock With Password";
+
+
+"wrong_password" = "Wrong password";
+"message_lock_app" = "You have entered incorrectly 3 times. Please wait for 3 minutes to try again. Time remaining:";
+
+"enter_current_passcode" = "Enter passcode";
+"enter_new_passcode" = "Enter new passcode";
+"enter_confirm_passcode" = "Enter confirm new passcode";
+
+"message_change_passcode_success" = "Change passcode successfully";
+"messsage_confirm_passcode_faild" = "Confirm password does not match";
