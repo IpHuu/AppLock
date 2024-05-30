@@ -38,6 +38,10 @@
 		09C7C8332BFF58B500258935 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C7C8322BFF58B500258935 /* BaseViewController.swift */; };
 		09C7C8362C007F8B00258935 /* LifecycleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C7C8342C007F8B00258935 /* LifecycleViewController.swift */; };
 		09C7C8372C007F8B00258935 /* LifecycleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09C7C8352C007F8B00258935 /* LifecycleViewController.xib */; };
+		7A5D45A92C086CC3005F0501 /* BlockingApplicationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5D45A52C086CC3005F0501 /* BlockingApplicationModel.swift */; };
+		7A5D45AA2C086CC3005F0501 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5D45A62C086CC3005F0501 /* Extensions.swift */; };
+		7A5D45AB2C086CC3005F0501 /* YouTubeBlocker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5D45A72C086CC3005F0501 /* YouTubeBlocker.swift */; };
+		7A5D45AC2C086CC3005F0501 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5D45A82C086CC3005F0501 /* SwiftUIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +109,10 @@
 		09C7C8322BFF58B500258935 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		09C7C8342C007F8B00258935 /* LifecycleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifecycleViewController.swift; sourceTree = "<group>"; };
 		09C7C8352C007F8B00258935 /* LifecycleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LifecycleViewController.xib; sourceTree = "<group>"; };
+		7A5D45A52C086CC3005F0501 /* BlockingApplicationModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlockingApplicationModel.swift; sourceTree = "<group>"; };
+		7A5D45A62C086CC3005F0501 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		7A5D45A72C086CC3005F0501 /* YouTubeBlocker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YouTubeBlocker.swift; sourceTree = "<group>"; };
+		7A5D45A82C086CC3005F0501 /* SwiftUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,6 +211,10 @@
 		09C7C8052BFDF13D00258935 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				7A5D45A52C086CC3005F0501 /* BlockingApplicationModel.swift */,
+				7A5D45A62C086CC3005F0501 /* Extensions.swift */,
+				7A5D45A82C086CC3005F0501 /* SwiftUIView.swift */,
+				7A5D45A72C086CC3005F0501 /* YouTubeBlocker.swift */,
 				09C7C8072BFDF16000258935 /* HomeViewController.swift */,
 				09C7C8082BFDF16000258935 /* HomeViewController.xib */,
 			);
@@ -380,6 +392,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A5D45A92C086CC3005F0501 /* BlockingApplicationModel.swift in Sources */,
+				7A5D45AA2C086CC3005F0501 /* Extensions.swift in Sources */,
 				09C7C8102BFDF1F000258935 /* TabbarViewController.swift in Sources */,
 				09C7C82F2BFF4DB300258935 /* LanguageManager.swift in Sources */,
 				09C7C81B2BFDFBDF00258935 /* RoundView.swift in Sources */,
@@ -388,9 +402,11 @@
 				09C7C8332BFF58B500258935 /* BaseViewController.swift in Sources */,
 				09C7C7A92BFB4CB600258935 /* AppDelegate.swift in Sources */,
 				09C7C8362C007F8B00258935 /* LifecycleViewController.swift in Sources */,
+				7A5D45AB2C086CC3005F0501 /* YouTubeBlocker.swift in Sources */,
 				09C7C7AB2BFB4CB600258935 /* SceneDelegate.swift in Sources */,
 				09C7C8212BFF26EC00258935 /* ChangePasswordViewController.swift in Sources */,
 				09C7C8192BFDFB2F00258935 /* ViewExtension.swift in Sources */,
+				7A5D45AC2C086CC3005F0501 /* SwiftUIView.swift in Sources */,
 				09C7C81D2BFDFF0F00258935 /* RoundViewButton.swift in Sources */,
 				09C7C7FF2BFDDC6200258935 /* FamilyActivityViewModel.swift in Sources */,
 				09C7C8142BFDF7AF00258935 /* LockViewController.swift in Sources */,
@@ -584,6 +600,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -614,6 +631,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

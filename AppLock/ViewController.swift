@@ -36,10 +36,9 @@ class ViewController: UIViewController {
     
     @objc func showPicker() {
         let pickerViewController = FamilyActivityPickerViewController()
-        pickerViewController.modalPresentationStyle = .fullScreen
+        pickerViewController.modalPresentationStyle = .formSheet
         present(pickerViewController, animated: true, completion: nil)
     }
-
 
 }
 

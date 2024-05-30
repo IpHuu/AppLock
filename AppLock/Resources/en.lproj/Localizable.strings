@@ -5,7 +5,7 @@
   Created by Ipman on 23/05/2024.
   
 */
-"home" = "Home";
+"home" = "Applications";
 "chooseLanguage" = "Choose Language";
 "en" = "English";
 "vi" = "Tiếng Việt";
@@ -28,3 +28,6 @@
 
 "message_change_passcode_success" = "Change passcode successfully";
 "messsage_confirm_passcode_faild" = "Confirm password does not match";
+
+"lock_apps" = "Lock";
+"unlock_apps" = "Unlock";

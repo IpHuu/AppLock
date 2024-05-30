@@ -20,10 +20,10 @@ class MyModel: ObservableObject{
             print("got here \(newValue)")
             let applications = newValue.applicationTokens
             let categories = newValue.categoryTokens
-            let webCategories = newValue.webDomainTokens
+//            let webCategories = newValue.webDomainTokens
             store.shield.applications = applications.isEmpty ? nil : applications
             store.shield.applicationCategories = ShieldSettings.ActivityCategoryPolicy.specific(categories ,except: Set())
-            store.shield.webDomains = webCategories
+            store.shield.webDomainCategories = ShieldSettings.ActivityCategoryPolicy.specific(categories, except: Set())
         }
     }
     

@@ -5,7 +5,7 @@
   Created by Ipman on 23/05/2024.
   
 */
-"home" = "主页";
+"home" = "应用";
 "chooseLanguage" = "选择语言";
 "en" = "English";
 "vi" = "Tiếng Việt";
@@ -25,3 +25,5 @@
 
 "message_change_passcode_success" = "密码更改成功";
 "messsage_confirm_passcode_faild" = "确认密码不匹配";
+"lock_apps" = "锁";
+"unlock_apps" = "开锁";

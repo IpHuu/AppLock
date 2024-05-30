@@ -14,7 +14,7 @@ class FamilyActivityPickerViewController: UIHostingController<FamilyActivityPick
     required init?(coder aDecoder: NSCoder) {
         let viewmodel = FamilyActivityViewModel()
         let picker = FamilyActivityPicker(selection: Binding(
-            get: {viewmodel.selection}, set: {viewmodel.selection = $0}
+            get: {viewmodel.selectionToDiscourage}, set: {viewmodel.selectionToDiscourage = $0}
         ))
         super.init(coder: aDecoder, rootView: picker)
     }
